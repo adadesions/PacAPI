@@ -21,7 +21,7 @@ export default {
       if (this.percentage < 10) {
         result = 540;
       } else if (this.percentage < 100) {
-        result = 525;
+        result = 520;
       }
 
       return `left: ${result}px`;
@@ -65,7 +65,16 @@ export default {
     position: absolute
     left: 500px
     top: 95px
+    font-family: 'Prompt'
     font-size: 72px
     font-weight: bold
     color: $theme-white
+
+  .text-battery
+    font-size: 20px
+    color: $theme-orange
+    font-family: 'Prompt'
+    font-weight: bold
+    letter-spacing: 2px
+    padding-left: 4.2em
 </style>
