@@ -22,7 +22,6 @@
         :percentage="this.energyLevel"
       ></EnergyBattery>
     </div>
-
     <div class="row">
       <div class="app-info-background">
         <div class="app-info">
