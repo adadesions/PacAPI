@@ -14,14 +14,14 @@ export default {
   props: ['percentage'],
   computed: {
     energyLevel() {
-      return `width: ${(245 * this.percentage) / 100}px`
+      return `width: ${(163 * this.percentage) / 100}px`
     },
     energyTextAdjust() {
-      let result = 500
+      let result = 480
       if (this.percentage < 10) {
-        result = 540
+        result = 500
       } else if (this.percentage < 100) {
-        result = 520
+        result = 495
       }
 
       return `left: ${result}px`
@@ -31,42 +31,34 @@ export default {
 </script>
 
 <style lang="sass" scope>
+  .app-battery
+    width: 200px
+    margin-top: 1em
+
   .energy
     position: absolute
-    top: 113px
-    left: 455px
-    height: 75px
+    top: 108px
+    left: 450px
+    height: 50px
     background-color: $theme-orange
     border-radius: 5px
 
   .energy-background
     position: absolute
-    top: 113px
-    left: 455px
-    height: 75px
-    width: 245px
+    top: 108px
+    left: 450px
+    height: 50px
+    width: 163px
     background-color: $theme-orange
     border-radius: 5px
     opacity: 0.3
 
-  .energy-100
-    width: 245px
-
-  .energy-80
-    width: 196px
-
-  .energy-50
-    width: 122px
-
-  .energy-30
-    width: 73px
-
   .energy-text
     position: absolute
-    left: 500px
-    top: 99px
+    left: 90px
+    top: 100px
     font-family: 'Prompt'
-    font-size: 72px
+    font-size: 45px
     font-weight: bold
     color: $theme-white
 
@@ -76,5 +68,5 @@ export default {
     font-family: 'Prompt'
     font-weight: bold
     letter-spacing: 2px
-    padding-left: 4.2em
+    padding-left: 0.9em
 </style>

@@ -16,11 +16,7 @@
     <br>
     <div id="statistic" class="row section-padding">
       <div class="col">
-        <q-btn
-          icon="img:statics/uis/ui-stat-04.png"
-          size="55px"
-          :ripple="{ color: 'orange' }"
-        />
+        <img class="stat-icon" src="statics/uis/ui-stat-04.png" alt="">
       </div>
       <EnergyBattery
         :percentage="this.energyLevel"
@@ -30,7 +26,7 @@
     <div class="row">
       <div class="app-info-background">
         <div class="app-info">
-          <div class="row">
+          <div class="row row-margin">
             <div class="col-4 col-margin">
               <InfoComponent
                 icon="statics/uis/ui-time.png"
@@ -46,7 +42,7 @@
               ></InfoComponent>
             </div>
           </div>
-          <div class="row">
+          <div class="row row-margin">
             <div class="col-4 col-margin">
               <InfoComponent
                 icon="statics/uis/ui-temp.png"
@@ -78,7 +74,6 @@
                 value="30,000 mAh"
               ></InfoComponent>
             </div>
-
           </div>
         </div>
       </div>
@@ -99,7 +94,7 @@ export default {
   },
   data() {
     return {
-      energyLevel: 50,
+      energyLevel: 100,
     }
   },
 }
