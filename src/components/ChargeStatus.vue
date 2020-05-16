@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="margin">
         <span v-for="(icon, idx) in patterns[patternNo]" :key="idx">
             <img class="app-icon-status" :src="icon" alt="">
             <ArrowRight v-if="idx < patterns[patternNo].length-1" />
@@ -46,5 +46,6 @@
 </script>
 
 <style lang="sass" scoped>
-
+    .margin
+        margin-left: 3em
 </style>

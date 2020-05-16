@@ -91,15 +91,15 @@ export default {
   },
   data() {
     return {
-      energyLevel: 59,
-      patternNo: 0,
+      energyLevel: 100,
+      patternNo: 5,
       info: {
-        remainTime: '11 h 49 m',
-        temp: '38.5 °C',
-        kWatt: '300 kW-hr',
-        voltage: '12.6 Volt',
-        ampere: '30,000 A',
-        capacity: '30,000 mAh',
+        remainTime: '4 h 30 m',
+        temp: '27.9 °C',
+        kWatt: '250 kW-hr',
+        voltage: '12.5 Volt',
+        ampere: '20,000 A',
+        capacity: '35,000 mAh',
       },
     }
   },
