@@ -14,23 +14,23 @@ export default {
   props: ['percentage'],
   computed: {
     energyLevel() {
-      return `width: ${(245 * this.percentage) / 100}px`;
+      return `width: ${(245 * this.percentage) / 100}px`
     },
     energyTextAdjust() {
-      let result = 500;
+      let result = 500
       if (this.percentage < 10) {
-        result = 540;
+        result = 540
       } else if (this.percentage < 100) {
-        result = 520;
+        result = 520
       }
 
-      return `left: ${result}px`;
+      return `left: ${result}px`
     },
   },
-};
+}
 </script>
 
-<style lang="sass">
+<style lang="sass" scope>
   .energy
     position: absolute
     top: 113px
@@ -64,7 +64,7 @@ export default {
   .energy-text
     position: absolute
     left: 500px
-    top: 95px
+    top: 99px
     font-family: 'Prompt'
     font-size: 72px
     font-weight: bold

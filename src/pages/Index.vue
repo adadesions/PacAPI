@@ -24,33 +24,36 @@
       </div>
       <EnergyBattery
         :percentage="this.energyLevel"
-      > AdaDeSions </EnergyBattery>
+      ></EnergyBattery>
     </div>
 
     <div class="row">
-      <div class="app-info"></div>
+      <div class="app-info">
+        <InfoComponent
+          icon="statics/uis/ui-time.png"
+          label="Remaining Time"
+          value="10 h 29 m"
+        ></InfoComponent>
+      </div>
     </div>
   </q-page>
 </template>
 
 <script>
-import ArrowRight from '../components/ArrowRight';
-import EnergyBattery from '../components/EnergyBattery';
+import ArrowRight from '../components/ArrowRight'
+import EnergyBattery from '../components/EnergyBattery'
+import InfoComponent from '../components/InfoComponent'
 
 export default {
   components: {
     ArrowRight,
     EnergyBattery,
+    InfoComponent,
   },
   data() {
     return {
       energyLevel: 50,
-    };
+    }
   },
-};
+}
 </script>
-
-<style lang="sass">
-  .test
-    background-color: $theme-orange
-</style>
