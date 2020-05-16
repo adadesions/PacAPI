@@ -28,14 +28,14 @@
               <InfoComponent
                 icon="statics/uis/ui-time.png"
                 label="Remaining Time"
-                value="10 h 29 m"
+                :value="info.remainTime"
               ></InfoComponent>
             </div>
             <div class="col-4">
               <InfoComponent
                 icon="statics/uis/ui-voltage.png"
                 label="Voltage"
-                value="12.6 Volt"
+                :value="info.voltage"
               ></InfoComponent>
             </div>
           </div>
@@ -44,14 +44,14 @@
               <InfoComponent
                 icon="statics/uis/ui-temp.png"
                 label="Temperature"
-                value="35 °C"
+                :value="info.temp"
               ></InfoComponent>
             </div>
             <div class="col-4">
               <InfoComponent
                 icon="statics/uis/ui-amp.png"
                 label="Ampere"
-                value="30,000 A"
+                :value="info.ampere"
               ></InfoComponent>
             </div>
 
@@ -61,14 +61,14 @@
               <InfoComponent
                 icon="statics/uis/ui-kw.png"
                 label="Kiloowatt"
-                value="300 kW-hr"
+                :value="info.kWatt"
               ></InfoComponent>
             </div>
             <div class="col-4">
               <InfoComponent
                 icon="statics/uis/ui-bat.png"
                 label="Capacity"
-                value="30,000 mAh"
+                :value="info.capacity"
               ></InfoComponent>
             </div>
           </div>
@@ -93,6 +93,14 @@ export default {
     return {
       energyLevel: 59,
       patternNo: 0,
+      info: {
+        remainTime: '11 h 49 m',
+        temp: '38.5 °C',
+        kWatt: '300 kW-hr',
+        voltage: '12.6 Volt',
+        ampere: '30,000 A',
+        capacity: '30,000 mAh',
+      },
     }
   },
 }
