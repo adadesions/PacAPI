@@ -26,19 +26,19 @@
         width: 30em
 
     .icon-style
-        width: 75px
+        width: 60px
         border-radius: 10em
 
     .text-section
-        margin-left: -2.5em
+        margin-left: -4em
 
     .text-style
-        font-size: 18px
+        font-size: 16px
         font-weight: bold
         color: $theme-white
-        margin-top: 0.5em
+        margin-top: 0.3em
 
     .value-style
-        font-size: 30px
+        font-size: 25px
         margin-top: 0
 </style>

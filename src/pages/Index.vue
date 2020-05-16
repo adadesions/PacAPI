@@ -28,12 +28,59 @@
     </div>
 
     <div class="row">
-      <div class="app-info">
-        <InfoComponent
-          icon="statics/uis/ui-time.png"
-          label="Remaining Time"
-          value="10 h 29 m"
-        ></InfoComponent>
+      <div class="app-info-background">
+        <div class="app-info">
+          <div class="row">
+            <div class="col-4 col-margin">
+              <InfoComponent
+                icon="statics/uis/ui-time.png"
+                label="Remaining Time"
+                value="10 h 29 m"
+              ></InfoComponent>
+            </div>
+            <div class="col-4">
+              <InfoComponent
+                icon="statics/uis/ui-voltage.png"
+                label="Voltage"
+                value="12.6 Volt"
+              ></InfoComponent>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 col-margin">
+              <InfoComponent
+                icon="statics/uis/ui-temp.png"
+                label="Temperature"
+                value="35 °C"
+              ></InfoComponent>
+            </div>
+            <div class="col-4">
+              <InfoComponent
+                icon="statics/uis/ui-amp.png"
+                label="Ampere"
+                value="30,000 A"
+              ></InfoComponent>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-4 col-margin">
+              <InfoComponent
+                icon="statics/uis/ui-kw.png"
+                label="Kiloowatt"
+                value="300 kW-hr"
+              ></InfoComponent>
+            </div>
+            <div class="col-4">
+              <InfoComponent
+                icon="statics/uis/ui-bat.png"
+                label="Capacity"
+                value="30,000 mAh"
+              ></InfoComponent>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </q-page>
