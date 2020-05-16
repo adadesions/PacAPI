@@ -63,10 +63,10 @@ export default {
     color: $theme-white
 
   .text-battery
-    font-size: 20px
+    font-size: 15px
     color: $theme-orange
     font-family: 'Prompt'
     font-weight: bold
     letter-spacing: 2px
-    padding-left: 0.9em
+    padding-left: 2.3em
 </style>
