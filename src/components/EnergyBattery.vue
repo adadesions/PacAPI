@@ -17,11 +17,11 @@ export default {
       return `width: ${(163 * this.percentage) / 100}px`
     },
     energyTextAdjust() {
-      let result = 480
+      let result = 530
       if (this.percentage < 10) {
-        result = 500
+        result += 20
       } else if (this.percentage < 100) {
-        result = 495
+        result += 15
       }
 
       return `left: ${result}px`
@@ -31,14 +31,18 @@ export default {
 </script>
 
 <style lang="sass" scope>
+  $batt-left: 500px
+
   .app-battery
+    position: absolute
     width: 200px
     margin-top: 1em
+    left: $batt-left - 12px
 
   .energy
     position: absolute
     top: 108px
-    left: 450px
+    left: $batt-left
     height: 50px
     background-color: $theme-orange
     border-radius: 5px
@@ -46,7 +50,7 @@ export default {
   .energy-background
     position: absolute
     top: 108px
-    left: 450px
+    left: $batt-left
     height: 50px
     width: 163px
     background-color: $theme-orange
@@ -55,7 +59,6 @@ export default {
 
   .energy-text
     position: absolute
-    left: 90px
     top: 100px
     font-family: 'Prompt'
     font-size: 45px
@@ -63,6 +66,9 @@ export default {
     color: $theme-white
 
   .text-battery
+    position: absolute
+    top: 170px
+    left: $batt-left - 10px
     font-size: 15px
     color: $theme-orange
     font-family: 'Prompt'

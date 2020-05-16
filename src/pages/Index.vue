@@ -6,11 +6,9 @@
         </div>
         <div class="col"></div>
         <div class="col">
-          <img class="app-icon-status" src="statics/uis/ui-solar.png" alt="">
-          <ArrowRight />
-          <img class="app-icon-status" src="statics/uis/ui-pacbatt.png" alt="">
-          <ArrowRight />
-          <img class="app-icon-status" src="statics/uis/ui-electic.png" alt="">
+          <ChargeStatus
+            :patternNo="patternNo"
+          ></ChargeStatus>
         </div>
     </div>
     <br>
@@ -19,7 +17,7 @@
         <img class="stat-icon" src="statics/uis/ui-stat-04.png" alt="">
       </div>
       <EnergyBattery
-        :percentage="this.energyLevel"
+        :percentage="energyLevel"
       ></EnergyBattery>
     </div>
     <div class="row">
@@ -81,19 +79,20 @@
 </template>
 
 <script>
-import ArrowRight from '../components/ArrowRight'
 import EnergyBattery from '../components/EnergyBattery'
 import InfoComponent from '../components/InfoComponent'
+import ChargeStatus from '../components/ChargeStatus'
 
 export default {
   components: {
-    ArrowRight,
+    ChargeStatus,
     EnergyBattery,
     InfoComponent,
   },
   data() {
     return {
-      energyLevel: 100,
+      energyLevel: 59,
+      patternNo: 0,
     }
   },
 }
