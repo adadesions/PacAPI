@@ -79,6 +79,7 @@
 </script>
 
 <style lang="sass" scoped>
+@media (max-width: $breakpoint-lg-max)
     .app-info-background-vertical
         background-color: $theme-orange
         height: 59.5em
