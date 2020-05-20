@@ -102,9 +102,9 @@ export default {
 
     .text-battery
       position: absolute
-      top: 170px
-      left: $batt-left - 10px
-      font-size: 15px
+      top: 10em
+      left: 27em
+      font-size: 35px
       color: $theme-orange
       font-family: 'Prompt'
       font-weight: bold
