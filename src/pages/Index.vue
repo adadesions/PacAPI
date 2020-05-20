@@ -2,7 +2,6 @@
   <q-page padding>
     <div class="row section-padding">
         <div class="col">
-          <!-- <img class="app-logo" src="statics/uis/ui-logo-main.png" alt=""> -->
         </div>
         <div class="col"></div>
         <div class="col">

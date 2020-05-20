@@ -3,7 +3,9 @@
     <q-bar class="q-electron-drag drag"></q-bar>
 
     <q-page-container style="padding: 0">
-      <img class="app-logo" src="statics/uis/ui-logo-main.png" alt="">
+      <router-link to="/">
+        <img class="app-logo" src="statics/uis/ui-logo-main.png" alt="">
+      </router-link>
       <router-view />
     </q-page-container>
   </q-layout>
