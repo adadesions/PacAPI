@@ -2,7 +2,7 @@
   <q-page padding>
     <div class="row section-padding">
         <div class="col">
-          <img class="app-logo" src="statics/uis/ui-logo-main.png" alt="">
+          <!-- <img class="app-logo" src="statics/uis/ui-logo-main.png" alt=""> -->
         </div>
         <div class="col"></div>
         <div class="col">
@@ -14,7 +14,9 @@
     <br>
     <div id="statistic" class="row section-padding">
       <div class="col">
-        <img class="stat-icon" src="statics/uis/ui-stat-04.png" alt="">
+        <router-link to="/statistic">
+          <img class="stat-icon" src="statics/uis/ui-stat-04.png" alt="">
+        </router-link>
       </div>
       <EnergyBattery
         :percentage="energyLevel"
@@ -91,7 +93,7 @@ export default {
   },
   data() {
     return {
-      energyLevel: 50,
+      energyLevel: 100,
       patternNo: 5,
       info: {
         remainTime: '4 h 30 m',

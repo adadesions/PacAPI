@@ -70,7 +70,7 @@ export default {
     .app-battery
       position: absolute
       width: 35em
-      margin-top: 1.5em
+      margin-top: -0.1em
       left: 65em
 
     .energy
