@@ -14,39 +14,77 @@
 
 .app-header
     background-color: $theme-orange
+    
+@media (max-width: $breakpoint-lg-max)
+    .app-logo
+        width: 500px
+        height: 100px
 
-.app-logo
-    width: 220px
-    height: 40px
+    .app-icon-status
+        width: 80px
 
-.app-icon-status
-    width: 35px
+    .app-info-background
+        position: absolute
+        background-color: $theme-orange
+        width: 100%
+        height: 30em
+        bottom: 0
+        margin-left: -1.6em
+        border-radius: 3em 3em 0 0
 
-.app-info-background
-    position: absolute
-    background-color: $theme-orange
-    width: 100%
-    height: 270px
-    bottom: 0
-    margin-left: -1.2em
-    border-radius: 3em 3em 0 0
+    .app-info
+        padding-top: 3em 
 
-.app-info
-    padding-top: 1em 
+    .section-padding
+        padding-left: 1em
 
-.section-padding
-    padding-left: 1em
+    .row-margin
+        margin-bottom: 2em
 
-.row-margin
-    margin-bottom: 1em
+    .col-margin
+        margin-left: 15em
+        margin-right: 10em
 
-.col-margin
-    margin-left: 8em
-    margin-right: 5em
+    .stat-icon
+        width: 12em
+        margin-left: 2em
 
-.stat-icon
-    width: 75px
-    margin-left: 2em
+    #statistic
+        margin-left: 10em
 
-#statistic
-    margin-left: 4em
+@media (max-width: $breakpoint-sm-max)
+    .app-logo
+        width: 220px
+        height: 40px
+
+    .app-icon-status
+        width: 35px
+
+    .app-info-background
+        position: absolute
+        background-color: $theme-orange
+        width: 100%
+        height: 270px
+        bottom: 0
+        margin-left: -1.2em
+        border-radius: 3em 3em 0 0
+
+    .app-info
+        padding-top: 1em 
+
+    .section-padding
+        padding-left: 1em
+
+    .row-margin
+        margin-bottom: 1em
+
+    .col-margin
+        margin-left: 8em
+        margin-right: 5em
+
+    .stat-icon
+        width: 75px
+        margin-left: 2em
+
+    #statistic
+        margin-left: 4em
