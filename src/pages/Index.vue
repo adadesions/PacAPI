@@ -91,7 +91,7 @@ export default {
   },
   data() {
     return {
-      energyLevel: 100,
+      energyLevel: 50,
       patternNo: 5,
       info: {
         remainTime: '4 h 30 m',

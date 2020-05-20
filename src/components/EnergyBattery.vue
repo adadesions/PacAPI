@@ -61,8 +61,10 @@ export default {
 
   // Lg-screen
   $energy-height: 9em
+  $energy-width: 29.3em
   $energy-top: 14em
   $batt-left-lg: 67em
+
 
   @media (max-width: $breakpoint-lg-max)
     .app-battery
@@ -81,10 +83,10 @@ export default {
 
     .energy-background
       position: absolute
-      top: 108px
-      left: $batt-left
-      height: 50px
-      width: 163px
+      top: $energy-top
+      left: $batt-left-lg
+      height: $energy-height
+      width: $energy-width
       background-color: $theme-orange
       border-radius: 5px
       opacity: 0.3
