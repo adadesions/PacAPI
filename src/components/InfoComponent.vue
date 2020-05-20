@@ -22,6 +22,29 @@
 </script>
 
 <style lang="sass" scoped>
+@media (max-width: $breakpoint-lg-max)
+    .fixed-size
+        width: 30em
+
+    .icon-style
+        width: 6.5em
+        border-radius: 10em
+
+    .text-section
+        margin-left: 1em
+
+    .text-style
+        font-size: 25px
+        width: 10em
+        font-weight: bold
+        color: $theme-white
+        margin-top: 0.3em
+
+    .value-style
+        font-size: 35px
+        margin-top: 0
+
+@media (max-width: $breakpoint-sm-max)
     .fixed-size
         width: 30em
 
