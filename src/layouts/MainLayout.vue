@@ -6,9 +6,7 @@
         <router-link to="/">
           <img class="app-logo" src="statics/uis/ui-logo-main.png" alt="">
         </router-link>
-
         <router-view />
-
     </q-page-container>
   </q-layout>
 </template>

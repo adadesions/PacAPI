@@ -116,7 +116,7 @@ export default {
     .app-battery
       position: absolute
       width: 200px
-      margin-top: 1em
+      margin-top: 0.45em
       left: $batt-left - 12px
 
     .energy
@@ -147,7 +147,7 @@ export default {
 
     .text-battery
       position: absolute
-      top: 170px
+      top: 175px
       left: $batt-left - 10px
       font-size: 15px
       color: $theme-orange
