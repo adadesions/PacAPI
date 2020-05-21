@@ -61,6 +61,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
     'prefer-promise-reject-errors': 'off',
+    'arrow-body-style': 'off',
     'linebreak-style': 'off',
     'indent': 'off',
     'semi': 'off',

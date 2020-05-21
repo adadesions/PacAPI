@@ -1,6 +1,8 @@
 <template>
     <div class="row">
-        <div class="col-7"></div>
+        <div class="col-7">
+            <!-- TODO: Try to use vuebars -->
+        </div>
         <div class="col-5 app-info-background-vertical">
             <div class="row">
                 <div class="col"></div>

@@ -6,7 +6,7 @@
         <div class="col"></div>
         <div class="col">
           <ChargeStatus
-            :patternNo="patternNo"
+            :patternNo="info.patternNo"
           ></ChargeStatus>
         </div>
     </div>
@@ -18,7 +18,7 @@
         </router-link>
       </div>
       <EnergyBattery
-        :percentage="energyLevel"
+        :percentage="info.energyLevel"
       ></EnergyBattery>
     </div>
     <div class="row">
@@ -80,6 +80,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import EnergyBattery from '../components/EnergyBattery'
 import InfoComponent from '../components/InfoComponent'
 import ChargeStatus from '../components/ChargeStatus'
@@ -90,19 +91,8 @@ export default {
     EnergyBattery,
     InfoComponent,
   },
-  data() {
-    return {
-      energyLevel: 100,
-      patternNo: 5,
-      info: {
-        remainTime: '4 h 30 m',
-        temp: '27.9 °C',
-        kWatt: '250 kW-hr',
-        voltage: '12.5 Volt',
-        ampere: '20,000 A',
-        capacity: '35,000 mAh',
-      },
-    }
+  computed: {
+    ...mapGetters('info', ['info']),
   },
 }
 </script>

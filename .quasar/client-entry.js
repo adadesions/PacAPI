@@ -55,7 +55,7 @@ console.info('[Quasar] Running ELECTRON.')
 
 
 async function start () {
-  const { app, router } = await createApp()
+  const { app, store, router } = await createApp()
 
   
 
