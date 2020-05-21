@@ -63,6 +63,7 @@ module.exports = {
     'prefer-promise-reject-errors': 'off',
     'arrow-body-style': 'off',
     'linebreak-style': 'off',
+    'no-unused-vars': 'off',
     'indent': 'off',
     'semi': 'off',
 

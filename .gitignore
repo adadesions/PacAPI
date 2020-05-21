@@ -105,3 +105,6 @@ dist
 
 # VSCODE
 .vscode/
+
+# boots
+src/boot/

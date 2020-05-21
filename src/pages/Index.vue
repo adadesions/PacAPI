@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import EnergyBattery from '../components/EnergyBattery'
 import InfoComponent from '../components/InfoComponent'
 import ChargeStatus from '../components/ChargeStatus'
@@ -93,6 +93,12 @@ export default {
   },
   computed: {
     ...mapGetters('info', ['info']),
+  },
+  methods: {
+    ...mapActions('info', ['fireReadData']),
+  },
+  created() {
+    this.fireReadData()
   },
 }
 </script>
