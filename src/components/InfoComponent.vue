@@ -27,14 +27,14 @@
         width: 30em
 
     .icon-style
-        width: 6.5em
+        width: 7.5em
         border-radius: 10em
 
     .text-section
         margin-left: 1em
 
     .text-style
-        font-size: 25px
+        font-size: 2em
         width: 10em
         font-weight: bold
         color: $theme-white

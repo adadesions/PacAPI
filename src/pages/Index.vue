@@ -55,8 +55,8 @@
                 :value="info.ampere"
               ></InfoComponent>
             </div>
-
           </div>
+
           <div class="row">
             <div class="col-4 col-margin">
               <InfoComponent
