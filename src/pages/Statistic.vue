@@ -84,7 +84,7 @@
 @media (max-width: $breakpoint-lg-max)
     .app-info-background-vertical
         background-color: $theme-orange
-        height: 59.5em
+        height: 77em
         border-radius: 3em 0 0 3em
 
     .text-header
