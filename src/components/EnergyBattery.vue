@@ -17,46 +17,56 @@ export default {
   data() {
     return {
       fullEnergySm: 168,
-      fullEnergyLg: 410,
+      fullEnergyLg: 41.5,
     }
   },
-  // computed: {
-  //   energyLevel() {
-  //     let fullEnergyScale = 0
-  //     const screenWidth = window.innerWidth
+  computed: {
+    energyLevel() {
+      let fullEnergyScale = 0
+      const screenWidth = window.innerWidth
 
-  //     if (screenWidth <= 800) {
-  //       fullEnergyScale = this.fullEnergySm
-  //     } else {
-  //       fullEnergyScale = this.fullEnergyLg
-  //     }
+      if (screenWidth <= 800) {
+        fullEnergyScale = this.fullEnergySm
+      } else {
+        fullEnergyScale = this.fullEnergyLg
+      }
 
-  //     return `width: ${(fullEnergyScale * this.percentage) / 100}px`
-  //   },
-  //   energyTextAdjust() {
-  //     const screenWidth = window.innerWidth
-  //     let data = []
+      return `width: ${(fullEnergyScale * this.percentage) / 100}em`
+    },
+    energyTextAdjust() {
+      const screenWidth = window.innerWidth
+      let digits = {}
 
-  //     if (screenWidth <= 800) {
-  //       data = [11.7, 0.7, 0.5]
-  //     } else {
-  //       data = [11.5, 0.7, 0.4]
-  //     }
+      if (screenWidth <= 800) {
+      	digits = {
+      		one: 0.7,
+			two: 0.5,
+			three: 1,
+		}
+      } else {
+      	digits = {
+      		one: 1.8,
+			two: 1.55,
+			three: 1.2,
+		}
+      }
 
-  //     let result = data[0]
-  //     if (this.percentage >= 0 && this.percentage < 10) {
-  //       result += data[1]
-  //     } else if (this.percentage < 100) {
-  //       result += data[2]
-  //     }
+      let offset = 0;
+      if (this.percentage >= 0 && this.percentage < 10) {
+        offset = digits.one
+      } else if (this.percentage >= 10 && this.percentage < 100) {
+        offset = digits.two
+      } else {
+      	offset = digits.three
+	  }
 
-  //     return `left: ${result}em`
-  //   },
-  // },
+      return `left: ${offset}em`
+    },
+  },
 }
 </script>
 
-<style lang="sass" scope>
+<style lang="sass" scoped>
   // Sm-screen
   $full-energy-sm: 163px
   $batt-left: 500px
@@ -66,7 +76,6 @@ export default {
   $energy-height: 12.5em
   $energy-top: 14em
   $batt-left-lg: 67em
-
 
   @media (max-width: $breakpoint-lg-max)
     .app-battery
@@ -99,7 +108,7 @@ export default {
       font-size: 10em
       font-weight: bold
       top: 0.1em
-      left: 1.5em
+      left: 1.55em
     .text-battery
       position: absolute
       z-index: 5

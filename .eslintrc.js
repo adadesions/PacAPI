@@ -66,6 +66,8 @@ module.exports = {
     'no-unused-vars': 'off',
     'indent': 'off',
     'semi': 'off',
+    'no-mixed-spaces-and-tabs': 'off',
+    'no-tabs': 'off',
 
     // allow debugger during development only
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'

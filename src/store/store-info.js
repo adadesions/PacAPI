@@ -15,6 +15,12 @@ const state = {
 
 const mutations = {
     updateInfo(curState, payload) {
+    	if (payload.energyLevel < 0) {
+    		payload.energyLevel = 0
+		} else if (payload.energyLevel > 100) {
+    		payload.energyLevel = 100
+		}
+
         Object.assign(curState.info, payload)
     },
 }
@@ -23,7 +29,6 @@ const actions = {
     fireSaveData(newInfo) {
         const info = firebaseDB.ref('pac0')
         info.set(newInfo)
-        console.log('Saved to db')
     },
 
     fireReadData({ commit }) {
