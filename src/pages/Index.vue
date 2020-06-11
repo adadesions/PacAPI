@@ -61,7 +61,7 @@
             <div class="col-4 col-margin">
               <InfoComponent
                 icon="statics/uis/ui-kw.png"
-                label="Kiloowatt"
+                label="Kilowatt"
                 :value="info.kWatt"
               ></InfoComponent>
             </div>
