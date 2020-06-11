@@ -64,6 +64,13 @@
 	}
 </script>
 <style lang="sass" scoped>
+	.app-info-background
+		position: absolute
+		background-color: $theme-orange
+		width: 100%
+		height: 50%
+		bottom: 0
+		border-radius: 3em 3em 0 0
 	@media (max-width: $breakpoint-xl-max)
 		.app-icon-status
 			width: 10em
@@ -76,17 +83,19 @@
 		.charge-status-container
 			padding-top: 1.5em
 	@media (max-width: $breakpoint-sm-max)
-		.app-icon-status
-			width: 3em
+		.app-info-background
+			height: 45%
+			margin-left: -1.1em
+		.app-info
+			padding-top: 0.7em
+		.col-margin
+			margin-left: 15%
+			margin-right: 10%
+		.row-margin
+		    margin-bottom: 0
 	@media (max-width: $breakpoint-xs-max)
 		.app-info-background
-			position: absolute
-			background-color: $theme-orange
-			width: 100%
-			height: 50%
-			bottom: 0
 			margin-left: -0.5em
-			border-radius: 3em 3em 0 0
 		.col-margin
 			margin-left: 4em
 			margin-right: 5em

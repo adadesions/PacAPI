@@ -48,20 +48,20 @@
 				width: 30em
 
 			.icon-style
-				width: 60px
+				width: 3em
 				border-radius: 10em
 
 			.text-section
 				margin-left: -4em
 
 			.text-style
-				font-size: 16px
+				font-size: 14px
 				font-weight: bold
 				color: $theme-white
 				margin-top: 0.3em
 
 			.value-style
-				font-size: 25px
+				font-size: 20px
 				margin-top: 0
 		@media (max-width: $breakpoint-xs-max)
 			.fixed-size
@@ -81,6 +81,6 @@
 				margin-top: 0.3em
 
 			.value-style
-				font-size: 25px
+				font-size: 20px
 				margin-top: 0
 </style>
