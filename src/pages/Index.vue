@@ -1,16 +1,17 @@
 <template>
   <q-page padding>
     <div class="row section-padding">
-        <div class="col">
+        <div class="col col-sm-4 col-md-4">
         </div>
-        <div class="col"></div>
-        <div class="col">
+        <div class="col col-sm-3 col-md-4"></div>
+        <div class="col col-sm-5 col-md-4">
           <ChargeStatus
             :patternNo="info.patternNo"
           ></ChargeStatus>
         </div>
     </div>
     <br>
+<!--	  TODO: FIX INFO RESOLUTIONS-->
     <div id="statistic" class="row section-padding">
       <div class="col">
         <router-link to="/statistic">
@@ -21,60 +22,9 @@
         :percentage="info.energyLevel"
       ></EnergyBattery>
     </div>
-    <div class="row">
-      <div class="app-info-background">
-        <div class="app-info">
-          <div class="row row-margin">
-            <div class="col-4 col-margin">
-              <InfoComponent
-                icon="statics/uis/ui-time.png"
-                label="Remaining Time"
-                :value="info.remainTime"
-              ></InfoComponent>
-            </div>
-            <div class="col-4">
-              <InfoComponent
-                icon="statics/uis/ui-voltage.png"
-                label="Voltage"
-                :value="info.voltage"
-              ></InfoComponent>
-            </div>
-          </div>
-          <div class="row row-margin">
-            <div class="col-4 col-margin">
-              <InfoComponent
-                icon="statics/uis/ui-temp.png"
-                label="Temperature"
-                :value="info.temp"
-              ></InfoComponent>
-            </div>
-            <div class="col-4">
-              <InfoComponent
-                icon="statics/uis/ui-amp.png"
-                label="Ampere"
-                :value="info.ampere"
-              ></InfoComponent>
-            </div>
-          </div>
 
-          <div class="row">
-            <div class="col-4 col-margin">
-              <InfoComponent
-                icon="statics/uis/ui-kw.png"
-                label="Kilowatt"
-                :value="info.kWatt"
-              ></InfoComponent>
-            </div>
-            <div class="col-4">
-              <InfoComponent
-                icon="statics/uis/ui-bat.png"
-                label="Capacity"
-                :value="info.capacity"
-              ></InfoComponent>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="row">
+		<InfoComponent></InfoComponent>
     </div>
   </q-page>
 </template>
