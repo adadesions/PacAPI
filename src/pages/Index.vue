@@ -22,10 +22,7 @@
         :percentage="info.energyLevel"
       ></EnergyBattery>
     </div>
-
-    <div class="row">
-		<InfoComponent></InfoComponent>
-    </div>
+	<InfoComponent :info="info"></InfoComponent>
   </q-page>
 </template>
 

@@ -3,51 +3,51 @@
 		<div class="app-info">
 			<div class="row row-margin">
 				<div class="col-4 col-margin">
-					<InfoComponent
+					<InfoItem
 						icon="statics/uis/ui-time.png"
 						label="Remaining Time"
 						:value="info.remainTime"
-					></InfoComponent>
+					></InfoItem>
 				</div>
 				<div class="col-4">
-					<InfoComponent
+					<InfoItem
 						icon="statics/uis/ui-voltage.png"
 						label="Voltage"
 						:value="info.voltage"
-					></InfoComponent>
+					></InfoItem>
 				</div>
 			</div>
 			<div class="row row-margin">
 				<div class="col-4 col-margin">
-					<InfoComponent
+					<InfoItem
 						icon="statics/uis/ui-temp.png"
 						label="Temperature"
 						:value="info.temp"
-					></InfoComponent>
+					></InfoItem>
 				</div>
 				<div class="col-4">
-					<InfoComponent
+					<InfoItem
 						icon="statics/uis/ui-amp.png"
 						label="Ampere"
 						:value="info.ampere"
-					></InfoComponent>
+					></InfoItem>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-4 col-margin">
-					<InfoComponent
+					<InfoItem
 						icon="statics/uis/ui-kw.png"
 						label="Kilowatt"
 						:value="info.kWatt"
-					></InfoComponent>
+					></InfoItem>
 				</div>
 				<div class="col-4">
-					<InfoComponent
+					<InfoItem
 						icon="statics/uis/ui-bat.png"
 						label="Capacity"
 						:value="info.capacity"
-					></InfoComponent>
+					></InfoItem>
 				</div>
 			</div>
 		</div>
@@ -55,57 +55,39 @@
 </template>
 
 <script>
-	import { mapGetters } from 'vuex';
+	import InfoItem from 'components/InfoItem';
 
 	export default {
 		name: 'InfoComponent',
-		computed: {
-			...mapGetters('info', ['info']),
-		},
+		components: { InfoItem },
+		props: ['info'],
 	}
 </script>
-
 <style lang="sass" scoped>
-	@media (max-width: $breakpoint-lg-max)
-		.fixed-size
-			width: 30em
-
-		.icon-style
-			width: 7.5em
-			border-radius: 10em
-
-		.text-section
-			margin-left: 1em
-
-		.text-style
-			font-size: 2em
+	@media (max-width: $breakpoint-xl-max)
+		.app-icon-status
 			width: 10em
-			font-weight: bold
-			color: $theme-white
-			margin-top: 0.3em
-
-		.value-style
-			font-size: 35px
-			margin-top: 0
-
+	@media (max-width: $breakpoint-lg-max)
+		.app-icon-status
+			width: 5em
+	@media (max-width: $breakpoint-md-max)
+		.app-icon-status
+			width: 3em
+		.charge-status-container
+			padding-top: 1.5em
 	@media (max-width: $breakpoint-sm-max)
-		.fixed-size
-			width: 30em
-
-		.icon-style
-			width: 60px
-			border-radius: 10em
-
-		.text-section
-			margin-left: -4em
-
-		.text-style
-			font-size: 16px
-			font-weight: bold
-			color: $theme-white
-			margin-top: 0.3em
-
-		.value-style
-			font-size: 25px
-			margin-top: 0
+		.app-icon-status
+			width: 3em
+	@media (max-width: $breakpoint-xs-max)
+		.app-info-background
+			position: absolute
+			background-color: $theme-orange
+			width: 100%
+			height: 50%
+			bottom: 0
+			margin-left: -0.5em
+			border-radius: 3em 3em 0 0
+		.col-margin
+			margin-left: 4em
+			margin-right: 5em
 </style>
