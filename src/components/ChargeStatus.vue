@@ -10,10 +10,10 @@
 <script>
     import ArrowRight from './ArrowRight'
 
-    const home = '../statics/uis/ui-home.png'
-    const solar = '../statics/uis/ui-solar.png'
-    const battery = '../statics/uis/ui-pacbatt.png'
-    const electric = '../statics/uis/ui-electric.png'
+    const home = '/statics/uis/ui-home.png'
+    const solar = '/statics/uis/ui-solar.png'
+    const battery = '/statics/uis/ui-pacbatt.png'
+    const electric = '/statics/uis/ui-electric.png'
 
     export default {
         name: 'ChargeStatus',
