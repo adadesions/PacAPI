@@ -70,10 +70,8 @@
 		width: 100%
 		bottom: 0
 		border-radius: 3em 3em 0 0
+
 	@media (max-width: $breakpoint-xl-max)
-		.app-icon-status
-			width: 10em
-	@media (max-width: $breakpoint-lg-max)
 		.app-info-background
 			height: 45%
 			margin-left: -1.1em

@@ -21,7 +21,7 @@
 	}
 </script>
 <style lang="sass" scoped>
-	@media (max-width: $breakpoint-lg-max)
+	@media (max-width: $breakpoint-xl-max)
 		.fixed-size
 			width: 30em
 
