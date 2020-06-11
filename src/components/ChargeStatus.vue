@@ -1,5 +1,5 @@
 <template>
-    <div class="margin">
+    <div class="charge-status-container">
         <span v-for="(icon, idx) in patterns[patternNo]" :key="idx">
             <img class="app-icon-status" :src="icon" alt="">
             <ArrowRight v-if="idx < patterns[patternNo].length-1" />
@@ -46,6 +46,22 @@
 </script>
 
 <style lang="sass" scoped>
-    .margin
-        margin-left: 3em
+	@media (max-width: $breakpoint-xl-max)
+		.app-icon-status
+			width: 10em
+	@media (max-width: $breakpoint-lg-max)
+		.app-icon-status
+			width: 5em
+	@media (max-width: $breakpoint-md-max)
+		.app-icon-status
+			width: 3em
+		.charge-status-container
+			padding-top: 1.5em
+	@media (max-width: $breakpoint-sm-max)
+		.app-icon-status
+			width: 3em
+	@media (max-width: $breakpoint-xs-max)
+		.app-icon-status
+			width: 2em
+
 </style>
