@@ -78,10 +78,16 @@
 		.app-icon-status
 			width: 5em
 	@media (max-width: $breakpoint-md-max)
-		.app-icon-status
-			width: 3em
-		.charge-status-container
-			padding-top: 1.5em
+		.app-info-background
+			height: 45%
+			margin-left: -1.1em
+		.app-info
+			padding-top: 1em
+		.col-margin
+			margin-left: 15%
+			margin-right: 10%
+		.row-margin
+			margin-bottom: 1em
 	@media (max-width: $breakpoint-sm-max)
 		.app-info-background
 			height: 45%
@@ -96,6 +102,8 @@
 	@media (max-width: $breakpoint-xs-max)
 		.app-info-background
 			margin-left: -0.5em
+		.app-info
+			padding-top: 1em
 		.col-margin
 			margin-left: 4em
 			margin-right: 5em

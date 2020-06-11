@@ -43,44 +43,64 @@
 			font-size: 35px
 			margin-top: 0
 
-		@media (max-width: $breakpoint-sm-max)
-			.fixed-size
-				width: 30em
+	@media (max-width: $breakpoint-md-max)
+		.fixed-size
+			width: 30em
 
-			.icon-style
-				width: 3em
-				border-radius: 10em
+		.icon-style
+			width: 6em
+			border-radius: 10em
 
-			.text-section
-				margin-left: -4em
+		.text-section
+			margin-left: -2em
 
-			.text-style
-				font-size: 14px
-				font-weight: bold
-				color: $theme-white
-				margin-top: 0.3em
+		.text-style
+			font-size: 25px
+			font-weight: bold
+			color: $theme-white
+			margin-top: 0.3em
 
-			.value-style
-				font-size: 20px
-				margin-top: 0
-		@media (max-width: $breakpoint-xs-max)
-			.fixed-size
-				width: 30em
+		.value-style
+			font-size: 35px
+			margin-top: 0
+	@media (max-width: $breakpoint-sm-max)
+		.fixed-size
+			width: 30em
 
-			.icon-style
-				width: 3em
-				border-radius: 10em
+		.icon-style
+			width: 3em
+			border-radius: 10em
 
-			.text-section
-				margin-left: -4em
+		.text-section
+			margin-left: -4em
 
-			.text-style
-				font-size: 12px
-				font-weight: bold
-				color: $theme-white
-				margin-top: 0.3em
+		.text-style
+			font-size: 14px
+			font-weight: bold
+			color: $theme-white
+			margin-top: 0.3em
 
-			.value-style
-				font-size: 20px
-				margin-top: 0
+		.value-style
+			font-size: 20px
+			margin-top: 0
+	@media (max-width: $breakpoint-xs-max)
+		.fixed-size
+			width: 30em
+
+		.icon-style
+			width: 3em
+			border-radius: 10em
+
+		.text-section
+			margin-left: -4em
+
+		.text-style
+			font-size: 12px
+			font-weight: bold
+			color: $theme-white
+			margin-top: 0.3em
+
+		.value-style
+			font-size: 20px
+			margin-top: 0
 </style>
