@@ -14,7 +14,7 @@ export default {
 <style lang="sass" scoped>
 	@media (max-width: $breakpoint-xl-max)
 	  .arrowIcon
-		  font-size: 3em
+		  font-size: 9em
 		  color: #FFF
 		  margin-top: -0.6em
 

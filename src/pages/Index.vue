@@ -1,8 +1,7 @@
 <template>
   <q-page padding>
     <div class="row section-padding">
-        <div class="col col-sm-4 col-md-4">
-        </div>
+        <div class="col col-sm-4 col-md-4"></div>
         <div class="col col-sm-3 col-md-4"></div>
         <div class="col col-sm-5 col-md-4">
           <ChargeStatus
@@ -11,7 +10,6 @@
         </div>
     </div>
     <br>
-<!--	  TODO: FIX INFO RESOLUTIONS-->
     <div id="statistic" class="row section-padding">
       <div class="col">
         <router-link to="/statistic">

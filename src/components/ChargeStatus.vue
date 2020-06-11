@@ -48,7 +48,7 @@
 <style lang="sass" scoped>
 	@media (max-width: $breakpoint-xl-max)
 		.app-icon-status
-			width: 10em
+			width: 7em
 	@media (max-width: $breakpoint-lg-max)
 		.app-icon-status
 			width: 5em

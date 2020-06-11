@@ -15,6 +15,14 @@
 .app-header
     background-color: $theme-orange
 
+
+@media (max-width: $breakpoint-xl-max)
+	.app-logo
+		position: fixed
+		margin-top: 2em
+		margin-left: 2em
+		width: 600px
+		height: auto
 @media (max-width: $breakpoint-lg-max)
     .app-logo
         position: fixed
@@ -22,9 +30,6 @@
         margin-left: 2em
         width: 500px
         height: 100px
-
-    .app-info
-        padding-top: 2em
 
     .section-padding
         padding-left: 1em
@@ -37,20 +42,10 @@
         margin-left: 10em
         margin-top: 3em
 
-
 @media (max-width: $breakpoint-sm-max)
     .app-logo
         width: 220px
         height: 40px
-
-    .app-info-background
-        position: absolute
-        background-color: $theme-orange
-        width: 100%
-        height: 270px
-        bottom: 0
-        margin-left: -1.2em
-        border-radius: 3em 3em 0 0
 
     .section-padding
         padding-left: 1em
