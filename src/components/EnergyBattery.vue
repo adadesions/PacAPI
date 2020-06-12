@@ -18,7 +18,7 @@ export default {
         xl: 50,
         lg: 30,
         md: 24,
-        sm: 0,
+        sm: 12.3,
         xs: 0,
       },
     }
@@ -141,6 +141,7 @@ export default {
       top: 2.5em
       left: 2.5em
       margin-top: -0.8em
+      margin-left: 0.1em
       background-color: $theme-orange
       opacity: 0.5
     .energy
@@ -151,6 +152,7 @@ export default {
       top: 2.5em
       left: 2.5em
       margin-top: -0.8em
+      margin-left: 0.1em
       background-color: $theme-orange
     .energy-text
       position: absolute
@@ -212,38 +214,42 @@ export default {
       margin-left: -2em
 
   @media (max-width: $breakpoint-sm-max)
-    .app-battery
-      position: absolute
-      width: 200px
-      margin-top: 0.45em
-
-    .energy
-      position: absolute
-      height: 50px
-      background-color: $theme-orange
-      border-radius: 5px
-
+    .battery-frame
+      width: 15em
+      margin-top: -3.5em
+      margin-left: 0
     .energy-background
-      position: absolute
-      height: 50px
-      width: 163px
+      height: 3.8em
+      width: 12.3em
+      margin-top: -5.2em
+      margin-left: -1.5em
       background-color: $theme-orange
       border-radius: 5px
       opacity: 0.3
+    .energy
+      height: 3.8em
+      width: 12.3em
+      margin-top: -5.2em
+      margin-left: -1.5em
+      background-color: $theme-orange
+      border-radius: 5px
 
     .energy-text
-      position: absolute
       font-family: 'Prompt'
-      font-size: 45px
+      font-size: 36px
       font-weight: bold
       color: $theme-white
+      margin-top: -1.2em
+      margin-left: 0.4em
 
     .text-battery
-      position: absolute
+      width: 15em
       font-size: 15px
       color: $theme-red
       font-family: 'Prompt'
       font-weight: bold
       letter-spacing: 2px
       padding-left: 2.3em
+      margin-top: -4em
+      margin-left: -3.9em
 </style>
