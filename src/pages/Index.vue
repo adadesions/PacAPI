@@ -11,14 +11,16 @@
     </div>
     <br>
     <div id="statistic" class="row section-padding">
-      <div class="col">
+      <div class="col col-md-6">
         <router-link to="/statistic">
           <img class="stat-icon" src="statics/uis/ui-stat-04.png" alt="">
         </router-link>
       </div>
-      <EnergyBattery
-        :percentage="info.energyLevel"
-      ></EnergyBattery>
+      <div class="col col-md-6">
+        <EnergyBattery
+          :percentage="info.energyLevel"
+        ></EnergyBattery>
+      </div>
     </div>
 	<InfoComponent :info="info"></InfoComponent>
   </q-page>

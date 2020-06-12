@@ -1,13 +1,13 @@
 <template>
-    <div class="col">
-        <div class="app-battery">
-          <img class="battery-frame" src="statics/uis/ui-battery.png" alt="">
-          <div class="energy-background" ></div>
-          <div class="energy" :style="energyLevel"></div>
-          <div class="energy-text" :style="energyTextAdjust">{{ percentage }}%</div>
-          <p class="text-battery">Battery Status</p>
-        </div>
-    </div>
+  <div class="app-battery">
+    <img class="battery-frame" src="statics/uis/ui-battery.png" alt="">
+    <div class="energy-background" ></div>
+    <div class="energy"></div>
+    <div class="energy-text">{{ percentage }}%</div>
+    <!-- <div class="energy" :style="energyLevel"></div>
+    <div class="energy-text" :style="energyTextAdjust">{{ percentage }}%</div> -->
+    <p class="text-battery">Battery Status</p>
+  </div>
 </template>
 
 <script>
@@ -38,17 +38,17 @@ export default {
       let digits = {}
 
       if (screenWidth <= 800) {
-      	digits = {
-      		one: 0.7,
-			two: 0.5,
-			three: 1,
-		}
+        digits = {
+          one: 0.7,
+          two: 0.5,
+          three: 1,
+        }
       } else {
-      	digits = {
-      		one: 1.8,
-			two: 1.55,
-			three: 1.2,
-		}
+        digits = {
+          one: 1.8,
+          two: 1.55,
+          three: 1.2,
+        }
       }
 
       let offset = 0;
@@ -57,8 +57,8 @@ export default {
       } else if (this.percentage >= 10 && this.percentage < 100) {
         offset = digits.two
       } else {
-      	offset = digits.three
-	  }
+        offset = digits.three
+    }
 
       return `left: ${offset}em`
     },
@@ -117,6 +117,44 @@ export default {
       font-weight: bold
       top: 6em
       left: 4.5em
+
+  @media (max-width: $breakpoint-md-max)
+    .app-battery
+      width: 2em
+    .battery-frame
+      width: 30em
+    .energy
+      width: 24em
+      height: 7.7em
+      margin-top: -1em
+      margin-left: -0.5em
+      background-color: $theme-orange
+      border-radius: 5px
+    .energy-background
+      width: 24em
+      height: 7.7em
+      margin-top: -1em
+      margin-left: -0.5em
+      background-color: $theme-orange
+      border-radius: 5px
+    .energy-text
+      width: 100%
+      font-family: 'Prompt'
+      font-size: 64px
+      font-weight: bold
+      color: $theme-white
+      margin-top: 0.3em
+      margin-left: 0.6em
+
+    .text-battery
+      width: 10em
+      font-size: 33px
+      color: $theme-orange
+      font-family: 'Prompt'
+      font-weight: bold
+      letter-spacing: 2px
+      margin-top: -1em
+      margin-left: -2em
 
   @media (max-width: $breakpoint-sm-max)
     .app-battery
