@@ -2,10 +2,8 @@
   <div class="app-battery">
     <img class="battery-frame" src="statics/uis/ui-battery.png" alt="">
     <div class="energy-background" ></div>
-    <div class="energy"></div>
+    <div class="energy" :style="energyLevel"></div>
     <div class="energy-text">{{ percentage }}%</div>
-    <!-- <div class="energy" :style="energyLevel"></div>
-    <div class="energy-text" :style="energyTextAdjust">{{ percentage }}%</div> -->
     <p class="text-battery">Battery Status</p>
   </div>
 </template>
@@ -16,8 +14,13 @@ export default {
   props: ['percentage'],
   data() {
     return {
-      fullEnergySm: 168,
-      fullEnergyLg: 41.5,
+      maxEnergy: {
+        xl: 50,
+        lg: 30,
+        md: 24,
+        sm: 0,
+        xs: 0,
+      },
     }
   },
   computed: {
@@ -25,10 +28,16 @@ export default {
       let fullEnergyScale = 0
       const screenWidth = window.innerWidth
 
-      if (screenWidth <= 800) {
-        fullEnergyScale = this.fullEnergySm
+      if (screenWidth < 599) {
+        fullEnergyScale = this.maxEnergy.xs
+      } else if (screenWidth < 1023) {
+        fullEnergyScale = this.maxEnergy.sm
+      } else if (screenWidth < 1439) {
+        fullEnergyScale = this.maxEnergy.md
+      } else if (screenWidth < 1919) {
+        fullEnergyScale = this.maxEnergy.lg
       } else {
-        fullEnergyScale = this.fullEnergyLg
+        fullEnergyScale = this.maxEnergy.xl
       }
 
       return `width: ${(fullEnergyScale * this.percentage) / 100}em`
