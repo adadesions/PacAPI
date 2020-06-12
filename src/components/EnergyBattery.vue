@@ -67,15 +67,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  // Sm-screen
-  $full-energy-sm: 163px
-  $batt-left: 500px
-
-  // Lg-screen
-  $energy-width: 41.5em
-  $energy-height: 12.5em
-  $energy-top: 14em
-  $batt-left-lg: 67em
 
   @media (max-width: $breakpoint-lg-max)
     .app-battery
@@ -168,20 +159,15 @@ export default {
       position: absolute
       width: 200px
       margin-top: 0.45em
-      left: $batt-left - 12px
 
     .energy
       position: absolute
-      top: 108px
-      left: $batt-left
       height: 50px
       background-color: $theme-orange
       border-radius: 5px
 
     .energy-background
       position: absolute
-      top: 108px
-      left: $batt-left
       height: 50px
       width: 163px
       background-color: $theme-orange
@@ -190,7 +176,6 @@ export default {
 
     .energy-text
       position: absolute
-      top: 100px
       font-family: 'Prompt'
       font-size: 45px
       font-weight: bold
@@ -198,8 +183,6 @@ export default {
 
     .text-battery
       position: absolute
-      top: 175px
-      left: $batt-left - 10px
       font-size: 15px
       color: $theme-red
       font-family: 'Prompt'
