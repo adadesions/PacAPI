@@ -67,7 +67,55 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
+  @media (max-width: $breakpoint-xl-max)
+    .app-battery
+      position: relative
+      z-index: 0
+    .battery-frame
+      position: absolute
+      z-index: 1
+      width: 60em
+    .energy-background
+      position: absolute
+      z-index: 2
+      width: 50em
+      height: 16em
+      top: 2.5em
+      left: 2.5em
+      margin-top: 0.4em
+      margin-left: 1em
+      background-color: $theme-orange
+      opacity: 0.5
+    .energy
+      position: absolute
+      z-index: 3
+      width: 50em
+      height: 16em
+      top: 2.5em
+      left: 2.5em
+      margin-top: 0.4em
+      margin-left: 1em
+      background-color: $theme-orange
+    .energy-text
+      position: absolute
+      z-index: 4
+      color: $theme-white
+      font-size: 150px
+      font-weight: bold
+      top: 0.1em
+      left: 1.55em
+      margin-top: 0.1em
+      margin-left: 0.2em
+    .text-battery
+      position: absolute
+      z-index: 5
+      color: $theme-red
+      font-size: 55px
+      font-weight: bold
+      top: 6em
+      left: 4.5em
+      margin-top: -0.4em
+      margin-left: -0.4em
   @media (max-width: $breakpoint-lg-max)
     .app-battery
       position: relative
