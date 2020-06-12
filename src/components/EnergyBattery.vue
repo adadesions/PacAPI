@@ -84,31 +84,36 @@ export default {
     .battery-frame
       position: absolute
       z-index: 1
+      width: 37em
     .energy-background
       position: absolute
       z-index: 2
-      width: $energy-width
-      height: $energy-height
+      width: 30em
+      height: 10em
       top: 2.5em
       left: 2.5em
+      margin-top: -0.8em
       background-color: $theme-orange
       opacity: 0.5
     .energy
       position: absolute
       z-index: 3
-      width: $energy-width
-      height: $energy-height
+      width: 25em
+      height: 10em
       top: 2.5em
       left: 2.5em
+      margin-top: -0.8em
       background-color: $theme-orange
     .energy-text
       position: absolute
       z-index: 4
       color: $theme-white
-      font-size: 10em
+      font-size: 128px
       font-weight: bold
       top: 0.1em
       left: 1.55em
+      margin-top: -0.1em
+      margin-left: -0.6em
     .text-battery
       position: absolute
       z-index: 5
@@ -117,6 +122,8 @@ export default {
       font-weight: bold
       top: 6em
       left: 4.5em
+      margin-top: -1em
+      margin-left: -1.5em
 
   @media (max-width: $breakpoint-md-max)
     .app-battery
