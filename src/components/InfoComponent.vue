@@ -82,6 +82,17 @@
 			margin-right: 5%
 		.row-margin
 			margin-bottom: 2em
+	@media (max-width: $breakpoint-lg-max)
+		.app-info-background
+			height: 45%
+			margin-left: -1.1em
+		.app-info
+			padding-top: 1em
+		.col-margin
+			margin-left: 15%
+			margin-right: 10%
+		.row-margin
+			margin-bottom: 1em
 	@media (max-width: $breakpoint-md-max)
 		.app-info-background
 			height: 45%
