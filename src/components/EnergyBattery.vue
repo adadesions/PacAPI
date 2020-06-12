@@ -108,12 +108,12 @@ export default {
       position: absolute
       z-index: 4
       color: $theme-white
-      font-size: 128px
+      font-size: 108px
       font-weight: bold
       top: 0.1em
       left: 1.55em
-      margin-top: -0.1em
-      margin-left: -0.6em
+      margin-top: 0
+      margin-left: -0.2em
     .text-battery
       position: absolute
       z-index: 5
@@ -130,15 +130,15 @@ export default {
       width: 2em
     .battery-frame
       width: 30em
-    .energy
+    .energy-background
       width: 24em
       height: 7.7em
       margin-top: -1em
       margin-left: -0.5em
       background-color: $theme-orange
       border-radius: 5px
-    .energy-background
-      width: 24em
+    .energy
+      width: 20em
       height: 7.7em
       margin-top: -1em
       margin-left: -0.5em
