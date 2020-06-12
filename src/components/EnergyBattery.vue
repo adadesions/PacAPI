@@ -151,12 +151,12 @@ export default {
       font-weight: bold
       color: $theme-white
       margin-top: 0.3em
-      margin-left: 0.6em
+      margin-left: 0.5em
 
     .text-battery
       width: 10em
       font-size: 33px
-      color: $theme-orange
+      color: $theme-red
       font-family: 'Prompt'
       font-weight: bold
       letter-spacing: 2px
@@ -201,7 +201,7 @@ export default {
       top: 175px
       left: $batt-left - 10px
       font-size: 15px
-      color: $theme-orange
+      color: $theme-red
       font-family: 'Prompt'
       font-weight: bold
       letter-spacing: 2px
